@@ -1,3 +1,36 @@
+/* Flip logo effect */
+.logo-flip {
+    perspective: 900px;
+    width: 120px;
+    height: 60px;
+    position: relative;
+}
+.logo-flip .logo {
+    position: absolute;
+    top: 0; left: 0;
+    width: 100%; height: 100%;
+    backface-visibility: hidden;
+    transition: none;
+    animation: logoFlipFront 4s linear infinite alternate;
+}
+.logo-flip .logo.latlai {
+    z-index: 2;
+    animation-name: logoFlipFront;
+}
+.logo-flip .logo:not(.latlai) {
+    z-index: 1;
+    animation-name: logoFlipBack;
+    animation: logoFlipBack 4s linear infinite alternate;
+}
+@keyframes logoFlipFront {
+    0% { transform: rotateY(0deg); }
+    100% { transform: rotateY(180deg); }
+}
+@keyframes logoFlipBack {
+    0% { transform: rotateY(-180deg); }
+    100% { transform: rotateY(0deg); }
+}
+
 .line_1,.line_2,.line_3,.line_4,.line_5,.line_14 {
     display: -webkit-box;
     -webkit-box-orient: vertical;
@@ -373,12 +406,12 @@ button {
 }
 
 .menu-toggle {
-    width: 50px;
+    width: 270px;
     height: 50px;
     right: -50px;
     top: 0;
     z-index: 10;
-    background: var(--leftColBackground)
+    /* background: var(--leftColBackground); */
 }
 
 .menu-toggle svg {
@@ -784,7 +817,7 @@ button {
     font-size: 17px;
     z-index: 7;
     flex: none;
-    padding: 18px 6px;
+    padding: 5px 6px;
     background: #ac0306;
 }
 
@@ -1093,4 +1126,27 @@ a.btn.btn-success {
 }
 .post-time{
     color: #ac0306;
+}
+.title12 {
+    font-size: 17px;
+    z-index: 7;
+    flex: none;
+    padding: 26px 24px;
+    background: linear-gradient(90deg, rgba(33,47,122,1) 55%, #ac0306 55%);
+    background-size: 200% 100%;
+    animation: title12Shine 10s linear infinite;
+    color: #fff;
+    position: relative;
+    overflow: hidden;
+}
+
+@keyframes title12Shine {
+    0% { background-position: 100% 0; }
+    100% { background-position: 0 0; }
+}
+@media screen  and (min-width: 768px) {
+    .pdt {
+        padding-bottom: 20px;
+    }
+    
 }

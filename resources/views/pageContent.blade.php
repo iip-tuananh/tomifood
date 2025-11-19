@@ -11,6 +11,13 @@
 @section('css')
 <link rel="preload" as="style" href="{{asset('frontend/css/pagestyle.scss.css')}}" type="text/css">
 <link href="{{asset('frontend/css/pagestyle.scss.css')}}" rel="stylesheet" type="text/css" media="all" />
+<style>
+    @media (max-width: 767px) {
+        .anmobile{
+            display: none !important;
+        }
+    }
+</style>
 @endsection
 @section('js')
 @endsection

@@ -2,6 +2,13 @@
 @php
 $img = json_decode($pro->images);
 @endphp
+<style>
+    @media (max-width: 767px) {
+        .anmobile{
+            display: none !important;
+        }
+    }
+</style>
 <div class="product-item position-relative mb-0 bg-white h-100 box_shadow">
    @if ($pro->discount > 0)
    <div class="sale-label sale-top-right position-absolute font-weight-bold"> Giảm {{100-ceil(($pro->discount/$pro->price)*100)}}% </div>

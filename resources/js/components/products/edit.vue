@@ -43,14 +43,14 @@
                 <label>Ảnh sản phẩm</label>
                 <ImageMulti v-model="objData.images" :title="'san-pham'"/>
               </div>
-              <div class="form-group">
+              <!-- <div class="form-group">
                 <label>Thêm biến thể (Bạn có thể thêm biến thể nếu sản phẩm này có nhiều lựa chọn như kích cỡ hoặc màu sắc. )</label>
                 <vs-switch v-model="objData.status_variant">
                   <span slot="on">On</span>
                   <span slot="off">Off</span>
                 </vs-switch>
-              </div>
-              <div class="variant" v-if="objData.status_variant == true " style="background: #f6f6fb; padding: 7px;">
+              </div> -->
+              <!-- <div class="variant" v-if="objData.status_variant == true " style="background: #f6f6fb; padding: 7px;">
                 <div v-if="VariantSku.length > 0">
                     <div>
                       <vs-table :data="VariantSku">
@@ -143,7 +143,7 @@
                       </vs-table>
                     </div>
               </div>
-              </div>
+              </div> -->
               
               <div class="form-group">
                 <label>Giá Sản phẩm</label>

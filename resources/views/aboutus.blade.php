@@ -6,6 +6,13 @@ Về Chúng Tôi
 {{$setting->company}}
 @endsection
 @section('css')
+<style>
+    @media (max-width: 767px) {
+        .anmobile{
+            display: none !important;
+        }
+    }
+</style>
 @endsection
 @section('js')
 @endsection

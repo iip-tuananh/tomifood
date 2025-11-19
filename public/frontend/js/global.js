@@ -57,6 +57,26 @@ if (menuButton && colLeft){
 
 	})
 }
+
+// Menu toggle từ header mobile
+const menuButtonTop = document.getElementById('js-menu-toggle-top');
+if (menuButtonTop && colLeft){
+	menuButtonTop.addEventListener('click', (event) => {
+		event.preventDefault();
+		m_mb_bar.classList.remove("active");
+		$('.mobile_open_box_swatch').removeClass('active');
+		$('.sidebar_mobi').removeClass('openf');
+		if (colLeft.classList.contains('active')){
+			colLeft.classList.remove("active");
+			bodyOverlay.classList.add("d-none");
+			document.querySelector('body').classList.remove("modal-open")
+		} else{
+			colLeft.classList.add("active");
+			bodyOverlay.classList.remove("d-none");
+			document.querySelector('body').classList.add("modal-open")
+		}
+	})
+}
 window.addEventListener('DOMContentLoaded', (event) => {
 	let shouldSkip = false;
 	document.querySelectorAll('#menu-mew .level0 .m_chill').forEach((item, index) => {

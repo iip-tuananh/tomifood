@@ -9,6 +9,13 @@ Bún đậu mắm tôm Lynh
 {{url(''.$banner[0]->image)}}
 @endsection
 @section('css')
+<style>
+    @media (max-width: 767px) {
+        .anmobile{
+            display: none !important;
+        }
+    }
+</style>
 <link rel="preload" as="style"  href="{{asset('frontend/css/cart_style.scss.css')}}" type="text/css">
 <link href="{{asset('frontend/css/cart_style.scss.css')}}" rel="stylesheet" type="text/css" media="all" />
 @endsection

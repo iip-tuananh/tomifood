@@ -124,11 +124,11 @@
                 <!-- <div class="form-group">
                   <label>Logo Mobile</label>
                   <image-upload type="avatar" v-model="objData.logo_mobi" :title="'logo_mobi'"></image-upload>
-                </div>
-                <div class="form-group">
-                  <label>Logo chân trang</label>
-                  <image-upload type="avatar" v-model="objData.logo_footer" :title="'logo_footer'"></image-upload>
                 </div> -->
+                <div class="form-group">
+                  <label>Logo 2</label>
+                  <image-upload type="avatar" v-model="objData.logo_footer" :title="'logo_footer'"></image-upload>
+                </div>
                 <!-- <div class="form-group">
                   <label>Ảnh Popup</label>
                   <image-upload type="avatar" v-model="objData.popupimage" :title="'popupimage'"></image-upload>

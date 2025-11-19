@@ -77,17 +77,21 @@
             --toastSystemCl: #141619;
         }
     </style>
+    @yield('css')
+    <style>
+      
+    </style>
     <link rel="preload" as="style" href="{{asset('frontend/css/swiper.scss.css?1676652384879')}}" type="text/css">
     <link href="{{asset('frontend/css/swiper.scss.css?1676652384879')}}" rel="stylesheet" type="text/css" media="all" />
     <link rel="preload" as="style" href="{{asset('frontend/css/bootstrap.scss.css?1676652384879')}}" type="text/css">
     <link href="{{asset('frontend/css/bootstrap.scss.css?1676652384879')}}" rel="stylesheet" type="text/css" media="all" />
     <link rel="preload" as="style" href="{{asset('frontend/css/mew_style_first.scss.css?1676652384879')}}" type="text/css">
     <link href="{{asset('frontend/css/mew_style_first.scss.css?1676652384879')}}" rel="stylesheet" type="text/css" media="all" />
-    @yield('css')
     <link rel="preload" as="style" href="{{asset('frontend/css/mew_style_gb.scss.css?1676652384879')}}" type="text/css">
     <link href="{{asset('frontend/css/mew_style_gb.scss.css?1676652384879')}}" rel="stylesheet" type="text/css" media="all" />
     <link rel="preload" as="style" href="{{asset('frontend/css/mew_noti.scss.css?1676652384879')}}" type="text/css">
     <link href="{{asset('frontend/css/mew_noti.scss.css?1676652384879')}}" rel="stylesheet" type="text/css" media="all" />
+    <link rel="stylesheet" href="{{asset('frontend/css/mew_style_index.scss.css')}}">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>

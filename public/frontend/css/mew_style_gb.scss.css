@@ -69,7 +69,8 @@ html {
 
 .navigation-block {
     min-width: calc(100% - 145px);
-    background: #ac0306;
+   background: #AC0306;
+background: linear-gradient(145deg,rgba(172, 3, 6, 1) 47%, rgba(255, 255, 255, 1) 67%, rgba(33, 47, 122, 1) 93%);
 }
 
 .col-left {
@@ -183,11 +184,12 @@ html {
 
 @media (orientation: portrait) {
     .menu_mobile #menu-mew {
+        background: #8e0716;
         display:flex;
-        height: 100px;
-        margin-top: calc(100vh - 320px)!important;
+        height: 1000px;
+        /* margin-top: calc(100vh - 320px)!important; */
         /* box-shadow: 0 0 3px 0 #ffffff; */
-        border-top: 1px solid white;
+        /* border-top: 1px solid white; */
     }
 
     .menu_mobile #menu-mew .level0 {
@@ -947,7 +949,10 @@ footer .payment-accept {
     border-top-left-radius: 30px;
     border-bottom-left-radius: 30px;
     justify-content: center;
-    align-items: center
+    align-items: center;
+     top: 50%!important;
+        transform: translateY(-50%);
+        flex-direction: column
 }
 
 @media (min-width: 992px) {
@@ -979,9 +984,7 @@ footer .payment-accept {
     }
 
     .fix-phone {
-        top: 50%!important;
-        transform: translateY(-50%);
-        flex-direction: column
+       
     }
 
     .fix-phone:before {
@@ -1027,6 +1030,7 @@ footer .payment-accept {
     }
 
     .mew_mobi_bar {
+        display: none !important;
         top: initial!important;
         bottom: 0;
         left: 0;
@@ -1082,19 +1086,18 @@ footer .payment-accept {
     }
 
     .fix-phone {
-        overflow: hidden;
-        bottom: 55px;
-        left: 50%;
-        right: auto;
-        transform: translate(-50%) scale(1);
-        border-radius: 6px;
-        background: #fff;
-        padding: 10px 0;
-        top: inherit!important;
-        box-shadow: 0 0 2px 2px rgba(45,52,58,.1);
-        opacity: 0;
-        transition: .7s;
-        visibility: hidden
+        
+        position: fixed;
+        z-index: 21;
+        right: 0;
+        display: flex;
+        border-top-left-radius: 10px;
+        border-bottom-left-radius: 10px;
+        justify-content: center;
+        align-items: center;
+        top: 50%!important;
+        transform: translateY(-50%);
+        flex-direction: column
     }
 
     .fix-phone.fix-phone.active {
@@ -1484,38 +1487,38 @@ footer .payment-accept {
 }
 .uk-position-top-left{
     position: absolute;
-    top: 3px;
-    left: 3px;
+    top: 11px;
+    left: 17px;
     z-index: 2;
 }
 .uk-position-bottom-right {
     position: absolute;
-    bottom: 3px;
-    right: 3px;
+    bottom: 11px;
+    right: 15px;
     z-index: 2;
 }
 .uk-position-top-right {
     position: absolute;
-    top: 3px;
-    right: 3px;
+    top: 11px;
+    right: 15px;
     z-index: 2;
 }
 .uk-position-bottom-left {
     position: absolute;
-    bottom: 3px;
-    left: 3px;
+    bottom: 11px;
+    left: 17px;
     z-index: 2;
 }
 .buttonsearch {
     width: 135px;
     height: 40px;
-    background-color: #f2641e;
+    background-color: #ac0306;
     text-transform: inherit;
     border: none;
 }
 .buttonsearch span svg{
     margin-top: 10px;
-    fill: white;
+    fill: #000000;
 }
 .mew_slide .uk-position-top-left{
     top: 21px;
@@ -1678,6 +1681,11 @@ footer .payment-accept {
     background: rgba(0, 0, 0, 0.5);
     opacity: 1;
 }
+  @media (min-width: 767px) {
+            .toan{
+                display: none !important;
+            }
+        }
 .category-name-text {
     font-size: 1.2rem;
     text-shadow: 2px 2px 4px rgba(0,0,0,0.8);
