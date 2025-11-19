@@ -172,7 +172,7 @@
                     <use href="#svg-phone" />
                 </svg>
             </a>
-            <a href="https://m.me/TibetHouse.VN" title="Chat Facebook" target="_blank"
+            <a href="{{$setting->facebook}}" title="Chat Facebook" target="_blank"
                 class="mt-lg-1 ml-1 mb-lg-1 mr-1 ml-lg-0 mr-lg-0 fb-box d-flex align-items-center justify-content-center rounded-circle">
                 <svg width="28" height="28">
                     <use href="#svg-messenger" />
