@@ -306,7 +306,7 @@
                     <div class="container">
                         <div class="rounded p-2">
                             <div
-                                class="head_box p-2 d-flex align-items-md-center justify-content-between flex-column flex-md-row">
+                                class="head_box  d-flex align-items-md-center justify-content-between flex-column flex-md-row">
                                 <div class="title text-uppercase font-weight-bold position-relative m-0 tuanbf">
                                     <div class="title1__box1">
 
